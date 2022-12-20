@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+    <script src="js/index.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="body">
+    <h2>Web-приложение для анализа метеоданных</h2>
+    <div class="items">
+        <select id="select_file">
+            <option>braford.csv</option>
+            <option>Novookolievsk.csv</option>
+        </select>
+        <select id="select_month">
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июнь</option>
+            <option>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+        </select>
+        <button id="load_data" onclick="loadFile()">Загрузить данные</button>
+    </div>
+    <table id="table" style="text-align: center">
+        <tbody id="table1">
+        <tr style='height: 40px'>
+            <th>Дата</th>
+            <th>Минимум</th>
+            <th>Средняя</th>
+            <th>Максимум</th>
+            <th>Осадки (мм)</th>
+        </tr>
+        </tbody>
+    </table>
+    <div class="items">
+        <button onclick="calc()">Сделать анализ метеоданных</button>
+        <button onclick="drawGraph()">Построить график</button>
+    </div>
+    <div class="info">
+        <pre class="item_info">Макс. температура <div id="max_temp">Неизвестно</div>
+        </pre>
+        <pre class="item_info">Мин. температура <div id="min_temp">Неизвестно</div>
+        </pre>
+        <pre class="item_info">Средняя температура <div id="avg_temp">Неизвестно</div>
+        </pre>
+        <pre class="item_info">Сумма осадков <div id="sum_rain">Неизвестно</div>
+        </pre>
+    </div>
+
+    <canvas id="graph">
+    </canvas>
+    <button onclick="save()" id="save">Сохранить график</button>
+</div>
+</body>
+</html>

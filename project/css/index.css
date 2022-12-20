@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    display: flex;
+}
+.body{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.items{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.items *{
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+#table{
+    width: 90%;
+    margin-top: 30px;
+    height: 30vh;
+    background: transparent;
+    margin-right: auto;
+    margin-left: auto;
+}
+.info{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.item_info{
+    display: flex;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#graph{
+    width: 800px;
+    height: 400px;
+    background: lightblue;
+    margin: 10px auto 30px;
+}
+td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+    font-weight: bold;
+}
+th {
+    background: #b0e0e6; /* Цвет фона */
+}
+#save{
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
